@@ -383,7 +383,8 @@ import CoreMIDI
 public class KeyboardView: NSView {
 
     var size = CGSize.zero
-
+    public override var isFlipped: Bool { true }
+    
     /// Number of octaves on the keyboard
     @IBInspectable open var octaveCount: Int = 2
     /// Octave number for left-most keys
